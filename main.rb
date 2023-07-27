@@ -28,3 +28,8 @@ def create_a_book(app)
   list_numbers
 end
 
+def create_a_rental(app)
+  app.create_a_rental
+  list_numbers
+end
+
