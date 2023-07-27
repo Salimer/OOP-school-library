@@ -43,3 +43,20 @@ class App
     puts 'Book created successfully'
   end
 
+  def create_a_rental()
+    puts '
+Select a book from the following list by number'
+    list_books
+    index_book = gets.chomp.to_i
+    puts '
+Select a person from the following list by number (not id)'
+    list_people
+    index_person = gets.chomp.to_i
+    print '
+Date: '
+    date = gets.chomp
+    rental = Rental.new(date, @books[index_book], @people[index_person])
+    @rentals << rental
+    puts 'Rental created successfully'
+  end
+
