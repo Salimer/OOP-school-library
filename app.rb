@@ -81,3 +81,21 @@ Date: '
     Student.new(classroom, age, name, permission)
   end
 
+  def create_a_teacher(name, age)
+    print 'Specialization: '
+    specialization = gets.chomp
+    Teacher.new(specialization, age, name)
+  end
+
+  def list_books
+    @books.each_with_index do |book, index|
+      puts "#{index}) Title \"#{book.title}\", Author: #{book.author}"
+    end
+  end
+
+  def list_people
+    @people.each_with_index do |person, index|
+      puts "#{index}) [#{person.type}] Name: #{person.name} ID: #{person.id}, Age: #{person.age}"
+    end
+  end
+end
