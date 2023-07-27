@@ -23,3 +23,17 @@ class App
     end
   end
 
+  def create_a_person(choice, name, age)
+    if choice == '1'
+      person = create_a_student(name, age)
+      person.type = 'Student'
+    elsif choice == '2'
+      person = create_a_teacher(name, age)
+      person.type = 'Teacher'
+    else
+      puts 'wrong choice, die'
+    end
+    @people << person
+    puts 'Person created successfully'
+  end
+
