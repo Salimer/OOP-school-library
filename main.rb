@@ -33,3 +33,13 @@ def create_a_rental(app)
   list_numbers
 end
 
+def list_all_rentals_for_a_given_person_id(app)
+  app.list_all_rentals_for_a_given_person_id
+  list_numbers
+end
+
+def invalid
+  puts 'invalid choice'
+  list_numbers
+end
+
