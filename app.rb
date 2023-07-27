@@ -69,3 +69,15 @@ Date: '
     end
   end
 
+  private
+
+  def create_a_student(name, age)
+    print 'Has parent permission? [Y/N]: '
+    parent = gets.chomp
+    permission = true if %w[Y y].include?(parent)
+    permission = false if %w[N n].include?(parent)
+    label = 'math'
+    classroom = Classroom.new(label)
+    Student.new(classroom, age, name, permission)
+  end
+
