@@ -19,3 +19,12 @@ def create_a_person(app)
   list_numbers
 end
 
+def create_a_book(app)
+  print 'Title: '
+  title = gets.chomp
+  print 'Author: '
+  author = gets.chomp
+  app.create_a_book(title, author)
+  list_numbers
+end
+
