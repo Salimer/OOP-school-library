@@ -58,3 +58,25 @@ Please choose an option by enterin a number (1-7):
   gets.chomp
 end
 
+def switch(app, number)
+  loop do
+    case number
+    when '1'
+      number = list_all_books(app)
+    when '2'
+      number = list_all_people(app)
+    when '3'
+      number = create_a_person(app)
+    when '4'
+      number = create_a_book(app)
+    when '5'
+      number = create_a_rental(app)
+    when '6'
+      number = list_all_rentals_for_a_given_person_id(app)
+    else
+      puts 'Thank you for using this app!'
+      break
+    end
+  end
+end
+
