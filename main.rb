@@ -80,3 +80,11 @@ def switch(app, number)
   end
 end
 
+def main()
+  app = App.new
+  puts 'Welcome to School Library App!'
+  number = list_numbers
+  switch(app, number)
+end
+
+main
