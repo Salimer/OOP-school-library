@@ -78,7 +78,7 @@ Date: '
     permission = false if %w[N n].include?(parent)
     label = 'math'
     classroom = Classroom.new(label)
-    Student.new(classroom, age, name, permission)
+    Student.new(classroom, age, permission, name)
   end
 
   def create_a_teacher(name, age)
