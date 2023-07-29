@@ -47,7 +47,7 @@ end
 
 def list_numbers()
   list = "
-Please choose an option by enterin a number (1-7):
+Please choose an option by entering a number (1-7):
 1 - List all books
 2 - List all people
 3 - Create a person
