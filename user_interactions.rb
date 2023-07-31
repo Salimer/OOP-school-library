@@ -1,6 +1,6 @@
 class UserInteractions
-  def initialize(test)
-    @app = test
+  def initialize(app)
+    @app = app
   end
 
   def list_all_books()
