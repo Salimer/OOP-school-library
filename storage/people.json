@@ -1,1 +1,25 @@
-[#<Student:0x000000010525e210 @id=26, @name="ai", @age="2", @parent_permission=false, @rentals=[], @classroom=#<Classroom:0x000000010509c850 @label="math", @students=[#<Student:0x000000010525e210 ...>]>, @type="Student">, #<Teacher:0x000000010525dfe0 @id=159, @name="hel", @age="23", @parent_permission=true, @rentals=[#<Rental:0x000000010509a370 @date="1212-1221-12", @person=#<Teacher:0x000000010525dfe0 ...>, @book=#<Book:0x000000010509b1f8 @title="hell", @author="me", @rentals=[#<Rental:0x000000010509a370 ...>]>>], @specialization="meff", @type="Teacher">]
+[
+  {
+    "id": 177,
+    "type": "Student",
+    "name": "we",
+    "age": "12",
+    "parent_permission": true,
+    "rentals": [
+
+    ]
+  },
+  {
+    "id": 181,
+    "type": "Teacher",
+    "name": "we",
+    "age": "we",
+    "specialization": "we",
+    "parent_permission": true,
+    "rentals": [
+      {
+        "date": "1212-12-12"
+      }
+    ]
+  }
+]
