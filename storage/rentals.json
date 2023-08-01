@@ -1,1 +1,27 @@
-[#<Rental:0x000000010509a370 @date="1212-1221-12", @person=#<Teacher:0x000000010525dfe0 @id=159, @name="hel", @age="23", @parent_permission=true, @rentals=[#<Rental:0x000000010509a370 ...>], @specialization="meff", @type="Teacher">, @book=#<Book:0x000000010509b1f8 @title="hell", @author="me", @rentals=[#<Rental:0x000000010509a370 ...>]>>]
+[
+  {
+    "date": "1212-12-12",
+    "person": {
+      "id": 181,
+      "type": "Teacher",
+      "name": "we",
+      "age": "we",
+      "specialization": "we",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        }
+      ]
+    },
+    "book": {
+      "title": "fsf",
+      "author": "sfd",
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        }
+      ]
+    }
+  }
+]
