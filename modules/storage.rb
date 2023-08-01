@@ -14,11 +14,8 @@ module Storage
     end
 
     def create_file(name, data)
-        File.open("storage/#{name}.json", "w") { |f| f.write(data) }
-    end
-
-    def array_to_json(arr)
-        json_data = JSON.generate(arr)
-        json_data
+        File.open("storage/#{name}.json", "w") do |f|
+          f.write(JSON.pretty_generate(data))
+        end
     end
 end
