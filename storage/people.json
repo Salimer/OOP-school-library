@@ -1,25 +1,25 @@
 [
   {
-    "id": 177,
+    "id": 1,
     "type": "Student",
-    "name": "we",
+    "name": "qw",
     "age": "12",
     "parent_permission": true,
     "rentals": [
-
+      {
+        "date": "12323-23-23"
+      }
     ]
   },
   {
-    "id": 181,
+    "id": 76,
     "type": "Teacher",
-    "name": "we",
-    "age": "we",
-    "specialization": "we",
+    "name": "wew",
+    "age": "12",
+    "specialization": "ew",
     "parent_permission": true,
     "rentals": [
-      {
-        "date": "1212-12-12"
-      }
+
     ]
   }
 ]
