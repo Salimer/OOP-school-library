@@ -50,7 +50,6 @@ module LoadStorage
         label = 'math'
         classroom = Classroom.new(label)
         person = Student.new(classroom, data['age'], data['parent_permission'], data['name'], data['id'])
-        #   binding.pry
         person.type = data['type']
       elsif data['type'] == 'Teacher'
         person = Teacher.new(data['specialization'], data['age'], data['name'], data['id'])
@@ -66,8 +65,9 @@ module LoadStorage
     data_base.each do |data|
       date = data['date']
       person_book_index = data['person_book_index']
-      rental = Rental.new(date, @books[person_book_index[1]], @people[person_book_index[0]],
-                          data['person_book_index'])
+      book = @books[person_book_index[1]]
+      person = @people[person_book_index[0]]
+      rental = Rental.new(date, book, person, data['person_book_index']) if book && person
       rentals << rental
     end
     rentals
