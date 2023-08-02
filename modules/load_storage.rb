@@ -11,9 +11,7 @@ module Load_storage
       end
     
       def load_people_data
-        data = load_data_from_file('people')
-        arr = create_person_from_data(data) unless data == []
-        arr
+        create_person_from_data(load_data_from_file('people'))
       end
     
       def load_books_data
@@ -37,15 +35,20 @@ module Load_storage
 
       def create_person_from_data(data_base)
         # binding.pry
+        people = []
         data_base.each do |data|
             if data['type'] == 'Student'
-            Student.new(data['age'], data['parent_permission'], data['name'])
+              label = 'math'
+              classroom = Classroom.new(label)
+              person = Student.new(classroom, data['age'], data['parent_permission'], data['name'])
             elsif data['type'] == 'Teacher'
-            Teacher.new(data['specialization'], data['age'], data['name'])
+              person = Teacher.new(data['specialization'], data['age'], data['name'])
             else
-            nil
+              nil
             end
+            people << person
         end
+        people
       end
 
       def create_rental_from_data(data)
