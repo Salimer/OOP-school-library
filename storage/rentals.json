@@ -1,15 +1,19 @@
 [
   {
-    "date": "1212-12-12-",
+    "date": "1212-12-12",
     "person": {
-      "id": 150,
-      "type": "Student",
-      "name": "ali",
-      "age": "12",
+      "id": 168,
+      "type": "Teacher",
+      "name": "wr",
+      "age": "3",
+      "specialization": "s",
       "parent_permission": true,
       "rentals": [
         {
-          "date": "1212-12-12-"
+          "date": "1212-12-12"
+        },
+        {
+          "date": "21212-121-12"
         }
       ]
     },
@@ -18,65 +22,33 @@
       "author": "me",
       "rentals": [
         {
-          "date": "1212-12-12-"
-        },
-        {
-          "date": "1212-32-32"
-        }
-      ]
-    },
-    "person_book_index": [
-      0,
-      0
-    ]
-  },
-  {
-    "date": "1212-12-12",
-    "person": {
-      "id": 26,
-      "type": "Teacher",
-      "name": "saf",
-      "age": "23",
-      "specialization": "afsd",
-      "parent_permission": true,
-      "rentals": [
-        {
           "date": "1212-12-12"
         },
         {
-          "date": "1212-32-32"
-        }
-      ]
-    },
-    "book": {
-      "title": "yo",
-      "author": "me",
-      "rentals": [
-        {
-          "date": "1212-12-12"
+          "date": "21212-121-12"
         }
       ]
     },
     "person_book_index": [
       1,
-      1
+      0
     ]
   },
   {
-    "date": "1212-32-32",
+    "date": "21212-121-12",
     "person": {
-      "id": 26,
+      "id": 168,
       "type": "Teacher",
-      "name": "saf",
-      "age": "23",
-      "specialization": "afsd",
+      "name": "wr",
+      "age": "3",
+      "specialization": "s",
       "parent_permission": true,
       "rentals": [
         {
           "date": "1212-12-12"
         },
         {
-          "date": "1212-32-32"
+          "date": "21212-121-12"
         }
       ]
     },
@@ -85,10 +57,10 @@
       "author": "me",
       "rentals": [
         {
-          "date": "1212-12-12-"
+          "date": "1212-12-12"
         },
         {
-          "date": "1212-32-32"
+          "date": "21212-121-12"
         }
       ]
     },
