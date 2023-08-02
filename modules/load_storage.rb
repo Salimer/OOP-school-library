@@ -1,5 +1,3 @@
-require 'pry'
-
 module LoadStorage
   def load_data_from_file(file_name)
     file_path = "storage/#{file_name}.json"
@@ -34,7 +32,6 @@ module LoadStorage
   def create_book_from_data(data_base)
     books = []
     data_base.each do |data|
-      # binding.pry
       title = data['title']
       author = data['author']
       book = Book.new(title, author)
