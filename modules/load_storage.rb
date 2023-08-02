@@ -1,3 +1,5 @@
+require 'pry'
+
 module Load_storage
     def load_data_from_file(file_name)
         file_path = "storage/#{file_name}.json"
@@ -26,13 +28,16 @@ module Load_storage
         Book.new(data['title'], data['author'])
       end
 
-      def create_person_from_data(data)
-        if data['type'] == 'Student'
-          Student.new(data['age'], data['parent_permission'], data['name'])
-        elsif data['type'] == 'Teacher'
-          Teacher.new(data['specialization'], data['age'], data['name'])
-        else
-          nil
+      def create_person_from_data(data_base)
+        # binding.pry
+        data_base.each do |data|
+            if data['type'] == 'Student'
+            Student.new(data['age'], data['parent_permission'], data['name'])
+            elsif data['type'] == 'Teacher'
+            Teacher.new(data['specialization'], data['age'], data['name'])
+            else
+            nil
+            end
         end
       end
 
