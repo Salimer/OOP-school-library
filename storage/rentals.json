@@ -1,0 +1,59 @@
+[
+  {
+    "date": "1212-12-12-",
+    "person": {
+      "id": 150,
+      "type": "Student",
+      "name": "ali",
+      "age": "12",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12-"
+        }
+      ]
+    },
+    "book": {
+      "title": "hell",
+      "author": "me",
+      "rentals": [
+        {
+          "date": "1212-12-12-"
+        }
+      ]
+    },
+    "person_book_index": [
+      0,
+      0
+    ]
+  },
+  {
+    "date": "1212-12-12",
+    "person": {
+      "id": 26,
+      "type": "Teacher",
+      "name": "saf",
+      "age": "23",
+      "specialization": "afsd",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        }
+      ]
+    },
+    "book": {
+      "title": "yo",
+      "author": "me",
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        }
+      ]
+    },
+    "person_book_index": [
+      1,
+      1
+    ]
+  }
+]
