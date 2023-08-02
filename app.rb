@@ -3,12 +3,16 @@ require './classes/student'
 require './classes/teacher'
 require './classes/rental'
 require './classes/classroom'
+require './modules/load_storage'
 
 class App
+
+include Load_storage
+
   def initialize()
-    @books = []
-    @people = []
-    @rentals = []
+    @books = load_books_data
+    @people = load_people_data
+    @rentals = load_rentals_data
   end
 
   def list_all_books
