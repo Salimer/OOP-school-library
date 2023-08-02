@@ -19,6 +19,9 @@
       "rentals": [
         {
           "date": "1212-12-12-"
+        },
+        {
+          "date": "1212-32-32"
         }
       ]
     },
@@ -39,6 +42,9 @@
       "rentals": [
         {
           "date": "1212-12-12"
+        },
+        {
+          "date": "1212-32-32"
         }
       ]
     },
@@ -54,6 +60,41 @@
     "person_book_index": [
       1,
       1
+    ]
+  },
+  {
+    "date": "1212-32-32",
+    "person": {
+      "id": 26,
+      "type": "Teacher",
+      "name": "saf",
+      "age": "23",
+      "specialization": "afsd",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        },
+        {
+          "date": "1212-32-32"
+        }
+      ]
+    },
+    "book": {
+      "title": "hell",
+      "author": "me",
+      "rentals": [
+        {
+          "date": "1212-12-12-"
+        },
+        {
+          "date": "1212-32-32"
+        }
+      ]
+    },
+    "person_book_index": [
+      1,
+      0
     ]
   }
 ]
