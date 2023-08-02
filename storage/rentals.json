@@ -1,0 +1,72 @@
+[
+  {
+    "date": "1212-12-12",
+    "person": {
+      "id": 168,
+      "type": "Teacher",
+      "name": "wr",
+      "age": "3",
+      "specialization": "s",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        },
+        {
+          "date": "21212-121-12"
+        }
+      ]
+    },
+    "book": {
+      "title": "hell",
+      "author": "me",
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        },
+        {
+          "date": "21212-121-12"
+        }
+      ]
+    },
+    "person_book_index": [
+      1,
+      0
+    ]
+  },
+  {
+    "date": "21212-121-12",
+    "person": {
+      "id": 168,
+      "type": "Teacher",
+      "name": "wr",
+      "age": "3",
+      "specialization": "s",
+      "parent_permission": true,
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        },
+        {
+          "date": "21212-121-12"
+        }
+      ]
+    },
+    "book": {
+      "title": "hell",
+      "author": "me",
+      "rentals": [
+        {
+          "date": "1212-12-12"
+        },
+        {
+          "date": "21212-121-12"
+        }
+      ]
+    },
+    "person_book_index": [
+      1,
+      0
+    ]
+  }
+]

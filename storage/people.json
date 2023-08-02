@@ -1,0 +1,28 @@
+[
+  {
+    "id": 144,
+    "type": "Student",
+    "name": "sdf",
+    "age": "12",
+    "parent_permission": true,
+    "rentals": [
+
+    ]
+  },
+  {
+    "id": 168,
+    "type": "Teacher",
+    "name": "wr",
+    "age": "3",
+    "specialization": "s",
+    "parent_permission": true,
+    "rentals": [
+      {
+        "date": "1212-12-12"
+      },
+      {
+        "date": "21212-121-12"
+      }
+    ]
+  }
+]

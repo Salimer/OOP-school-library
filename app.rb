@@ -3,12 +3,15 @@ require './classes/student'
 require './classes/teacher'
 require './classes/rental'
 require './classes/classroom'
+require './modules/load_storage'
 
 class App
+  include LoadStorage
+
   def initialize()
-    @books = []
-    @people = []
-    @rentals = []
+    @books = load_books_data
+    @people = load_people_data
+    @rentals = load_rentals_data
   end
 
   def list_all_books
@@ -55,7 +58,7 @@ Select a person from the following list by number (not id)'
     print '
 Date: '
     date = gets.chomp
-    rental = Rental.new(date, @books[index_book], @people[index_person])
+    rental = Rental.new(date, @books[index_book], @people[index_person], [index_person, index_book])
     @rentals << rental
     puts 'Rental created successfully'
   end
