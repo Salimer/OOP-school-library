@@ -16,7 +16,7 @@ class Student < Person
   def to_hash
     {
       'id' => @id,
-      'type' => self.class.name,
+      'type' => 'Student',
       'name' => @name,
       'age' => @age,
       'parent_permission' => @parent_permission,
