@@ -1,25 +1,24 @@
 [
   {
-    "date": "1212-12-12",
+    "date": "12323-23-23",
     "person": {
-      "id": 181,
-      "type": "Teacher",
-      "name": "we",
-      "age": "we",
-      "specialization": "we",
+      "id": 1,
+      "type": "Student",
+      "name": "qw",
+      "age": "12",
       "parent_permission": true,
       "rentals": [
         {
-          "date": "1212-12-12"
+          "date": "12323-23-23"
         }
       ]
     },
     "book": {
-      "title": "fsf",
-      "author": "sfd",
+      "title": "we",
+      "author": "we",
       "rentals": [
         {
-          "date": "1212-12-12"
+          "date": "12323-23-23"
         }
       ]
     }
