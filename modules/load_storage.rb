@@ -19,7 +19,7 @@ module Load_storage
       end
     
       def load_rentals_data
-        load_data_from_file('rentals')
+        create_rental_from_data(load_data_from_file('rentals'))
       end
 
       def create_book_from_data(data_base)
@@ -27,7 +27,7 @@ module Load_storage
         data_base.each do |data| 
           book = Book.new(data['title'], data['author'])
           rentals = data['rentals']
-          # book.rentals = rentals.map { |rental_data| Rental.new(rental_data['date']) }
+          book.rentals = rentals.map { |rental_data| Rental.new(rental_data['date']) }
           books << book
         end
         books
@@ -51,10 +51,15 @@ module Load_storage
         people
       end
 
-      def create_rental_from_data(data)
-        date = data['date']
-        book = create_book_from_data(data['book'])
-        person = create_person_from_data(data['person'])
-        Rental.new(date, book, person) if book && person
+      def create_rental_from_data(data_base)
+        rentals = []
+        data_base.each do |data|
+          date = data['date']
+          book = create_book_from_data(data['book'])
+          person = create_person_from_data(data['person'])
+          rental = Rental.new(date, book, person) if book && person
+          rentals << rental
+        end
+        rentals
       end
 end
