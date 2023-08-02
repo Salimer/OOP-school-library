@@ -17,15 +17,22 @@ module Load_storage
       end
     
       def load_books_data
-        load_data_from_file('books')
+        create_book_from_data(load_data_from_file('books'))
       end
     
       def load_rentals_data
         load_data_from_file('rentals')
       end
 
-      def create_book_from_data(data)
-        Book.new(data['title'], data['author'])
+      def create_book_from_data(data_base)
+        books = []
+        data_base.each do |data| 
+          book = Book.new(data['title'], data['author'])
+          rentals = data['rentals']
+          # book.rentals = rentals.map { |rental_data| Rental.new(rental_data['date']) }
+          books << book
+        end
+        books
       end
 
       def create_person_from_data(data_base)
