@@ -6,8 +6,7 @@ require './classes/classroom'
 require './modules/load_storage'
 
 class App
-
-include Load_storage
+  include LoadStorage
 
   def initialize()
     @books = load_books_data
