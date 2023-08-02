@@ -1,4 +1,4 @@
-require_relative '../nameable'
+require_relative 'spec_helper'
 
 RSpec.describe Nameable do
   describe '#correct_name' do
