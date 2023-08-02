@@ -1,10 +1,19 @@
 [
   {
-    "title": "we",
-    "author": "we",
+    "title": "hell",
+    "author": "me",
     "rentals": [
       {
-        "date": "12323-23-23"
+        "date": "1212-12-12-"
+      }
+    ]
+  },
+  {
+    "title": "yo",
+    "author": "me",
+    "rentals": [
+      {
+        "date": "1212-12-12"
       }
     ]
   }
