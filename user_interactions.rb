@@ -1,8 +1,7 @@
 require './modules/storage'
 
 class UserInteractions
-
-include Storage
+  include Storage
 
   def initialize(app)
     @app = app
@@ -69,16 +68,15 @@ Please choose an option by entering a number (1-7):
   end
 
   def exit
-    create_storage_directory() unless storage_directory_check?()
-    app_arrays = ['people', 'books', 'rentals']
-  
+    create_storage_directory unless storage_directory_check?
+    app_arrays = %w[people books rentals]
+
     app_arrays.each do |file|
       data = @app.instance_variable_get("@#{file}")
       json_data = data.map(&:to_hash)
       create_file(file, json_data)
     end
-  
+
     puts 'Thank you for using this app!'
   end
-  
 end
