@@ -1,0 +1,27 @@
+[
+  {
+    "id": 150,
+    "type": "Student",
+    "name": "ali",
+    "age": "12",
+    "parent_permission": true,
+    "rentals": [
+      {
+        "date": "1212-12-12-"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "type": "Teacher",
+    "name": "saf",
+    "age": "23",
+    "specialization": "afsd",
+    "parent_permission": true,
+    "rentals": [
+      {
+        "date": "1212-12-12"
+      }
+    ]
+  }
+]
