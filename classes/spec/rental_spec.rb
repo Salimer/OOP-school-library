@@ -20,4 +20,10 @@ describe Rental do
             expect(@rental.person).to be_an_instance_of Teacher
         end
     end
+
+    context 'Change the data to HASH format:' do
+        it 'Check if the object is converted into hash' do
+            expect(@rental.to_hash.class).to eq Hash
+        end
+    end
 end
