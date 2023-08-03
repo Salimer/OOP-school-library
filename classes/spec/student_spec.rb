@@ -1,23 +1,28 @@
-# require_relative 'spec_helper'
+require_relative 'spec_helper'
 
-# describe Person do
-#   before :each do
-#     @classroom = Classroom.new('Math')
-#     @student = Student.new(@classroom, 10, true, 'Abdulali')
-#     @unknown = Person.new(10, 10)
-#   end
+describe Student do
+  before :each do
+    @classroom = Classroom.new('Math')
+    @student = Student.new(@classroom, 10, true, 'Abdulali')
+  end
 
-#   context '#play_hooky' do 
-#     it "should return '¯(ツ)/¯'" do
-#       expect(@person).to be_an_instance_of Person
-#     end
+  context '#play_hooky' do 
+    it "should return '¯(ツ)/¯'" do
+      expect(@student.play_hooky).to eq '¯(ツ)/¯'
+    end
 
-#     it 'should return the correct age = 30' do
-#       expect(@person.age).to eql 30
-#     end
+    it 'should return the correct age = 10' do
+      expect(@student.age).to eql 10
+    end
 
-#     it 'should return the correct name = Abdulali' do
-#       expect(@person.name).to eql 'Abdulali'
-#     end
-#   end
-# end
+    it 'should return the correct name = Abdulali' do
+      expect(@student.name).to eql 'Abdulali'
+    end
+  end
+
+  context 'Change the data to HASH format:' do
+    it 'Check if the array is converted into hash' do
+        expect(@student.to_hash.class).to eq Hash
+    end
+  end
+end
