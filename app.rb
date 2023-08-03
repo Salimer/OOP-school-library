@@ -59,6 +59,8 @@ Select a person from the following list by number (not id)'
 Date: '
     date = gets.chomp
     rental = Rental.new(date, @books[index_book], @people[index_person], [index_person, index_book])
+    @books[index_book].add_rental(rental)
+    @people[index_person].add_rental(rental)
     @rentals << rental
     puts 'Rental created successfully'
   end
