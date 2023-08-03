@@ -8,8 +8,6 @@ class Rental
     @person = person
     @book = book
     @person_book_index = person_book_index
-    person&.add_rental(self)
-    book&.add_rental(self)
   end
 
   def to_hash
