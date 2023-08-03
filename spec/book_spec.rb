@@ -6,7 +6,7 @@ describe Book do
         # Student.new(classroom, age, permission, name)
     end
 
-    context 'Add new book' do
+    context 'Add new book:' do
         it 'Check if the @book is an object of the Book' do
             expect(@book).to be_an_instance_of Book
         end
@@ -15,6 +15,13 @@ describe Book do
         end
         it 'Check for author' do
             expect(@book.author).to eq 'Abdulali'
+        end
+    end
+
+    context 'Change the data to HASH format:' do
+        it 'Check if the book object is converted to JSON format' do
+            hash_obj = @book.to_hash.to_s
+            expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[]}'
         end
     end
 end
