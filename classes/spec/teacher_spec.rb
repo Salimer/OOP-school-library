@@ -19,6 +19,12 @@ describe Teacher do
     end
   end
 
+  context 'When using can_use_services? method' do
+    it 'should return false if under age and no parent permission' do
+      expect(@teacher.can_use_services?).to be true
+    end
+  end
+
   context 'Change the data to HASH format:' do
     it 'Check if the object is converted into hash' do
       expect(@teacher.to_hash.class).to eq Hash
