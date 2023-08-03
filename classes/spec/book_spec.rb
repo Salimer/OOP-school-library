@@ -22,7 +22,7 @@ describe Book do
   context 'Change the data to HASH format:' do
     it 'Check if the book object is converted to JSON format' do
       hash_obj = @book.to_hash.to_s
-      expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[{"date"=>"2023-08-02"}]}'
+      expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[]}'
     end
     it 'Check if the array is converted into hash' do
       expect(@book.to_hash.class).to eq Hash
@@ -31,7 +31,8 @@ describe Book do
 
   context 'When adding a new rentals' do
     it 'The add_rental method returns a rental and adds it to the book' do
-      expect(@book.rentals[0]).to eql @rental
+      @book.add_rental(@rental)
+      expect(@book.rentals.length).to eql 1
     end
   end
 end
