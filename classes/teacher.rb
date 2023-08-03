@@ -1,6 +1,8 @@
 require_relative 'person'
 
 class Teacher < Person
+  attr_reader :specialization
+
   def initialize(specialization, age, name = 'unknown', id = nil, parent_permission: true)
     id ||= Random.rand(1..188)
 

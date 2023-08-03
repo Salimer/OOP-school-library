@@ -2,7 +2,7 @@ module LoadStorage
   def load_data_from_file(file_name)
     file_path = "storage/#{file_name}.json"
 
-    return [] unless File.exist?(file_path)
+    return [] unless File.exist?(file_path) && !File.empty?(file_path)
 
     data_from_file = File.read(file_path)
     JSON.parse(data_from_file, create_additions: true)
