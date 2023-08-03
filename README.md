@@ -93,6 +93,12 @@ No tests here...
 - GitHub: [@Salimer](https://github.com/Salimer)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sbamahfoodh)
 
+👤 **Abdul Ali Noori**
+
+- GitHub: [@ab-noori](https://github.com/ab-noori)
+- Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
+- LinkedIn: [abdulali-noori](https://www.linkedin.com/in/abdulali-noori)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
