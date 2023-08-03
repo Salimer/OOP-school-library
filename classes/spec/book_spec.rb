@@ -3,7 +3,8 @@ require_relative 'spec_helper'
 describe Book do
   before :each do
     @book = Book.new('Afghanistan', 'Abdulali')
-    # Student.new(classroom, age, permission, name)
+    @teacher = Teacher.new('math', 30, 'Salim')
+    @rental = Rental.new('2023-08-02', @book, @teacher, [0, 0])
   end
 
   context 'Add new book:' do
@@ -21,10 +22,16 @@ describe Book do
   context 'Change the data to HASH format:' do
     it 'Check if the book object is converted to JSON format' do
       hash_obj = @book.to_hash.to_s
-      expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[]}'
+      expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[{"date"=>"2023-08-02"}]}'
     end
     it 'Check if the array is converted into hash' do
       expect(@book.to_hash.class).to eq Hash
+    end
+  end
+
+  context 'When adding a new rentals' do
+    it 'The add_rental method returns a rental and adds it to the book' do
+      expect(@book.rentals[0]).to eql @rental
     end
   end
 end
