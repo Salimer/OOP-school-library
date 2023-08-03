@@ -23,5 +23,8 @@ describe Book do
             hash_obj = @book.to_hash.to_s
             expect(hash_obj).to eq '{"title"=>"Afghanistan", "author"=>"Abdulali", "rentals"=>[]}'
         end
+        it 'Check if the array is converted into hash' do
+            expect(@book.to_hash.class).to eq Hash
+        end
     end
 end
