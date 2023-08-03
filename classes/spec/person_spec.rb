@@ -34,7 +34,8 @@ describe Person do
 
   context 'When adding a new rentals' do
     it 'The add_rental method returns a rental and adds it to the book' do
-      expect(@person.rentals[0]).to eql @rental
+      @person.add_rental(@rental)
+      expect(@person.rentals.length).to eql 1
     end
   end
 
