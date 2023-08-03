@@ -6,7 +6,7 @@ describe Student do
     @student = Student.new(@classroom, 10, true, 'Abdulali')
   end
 
-  context '#play_hooky' do 
+  context '#play_hooky' do
     it "should return '¯(ツ)/¯'" do
       expect(@student.play_hooky).to eq '¯(ツ)/¯'
     end
@@ -22,7 +22,7 @@ describe Student do
 
   context 'Change the data to HASH format:' do
     it 'Check if the array is converted into hash' do
-        expect(@student.to_hash.class).to eq Hash
+      expect(@student.to_hash.class).to eq Hash
     end
   end
 end
