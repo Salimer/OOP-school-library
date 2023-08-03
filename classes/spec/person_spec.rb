@@ -6,7 +6,7 @@ describe Person do
     @unknown = Person.new(10, 10)
   end
 
-  context 'When testing a Person class' do 
+  context 'When testing a Person class' do
     it 'takes three parameters and returns a Person object' do
       expect(@person).to be_an_instance_of Person
     end
